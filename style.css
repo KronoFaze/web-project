@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	background-image: url('/assets/img/background.jpg');
+}
+.container {
+	width: 80%;
+	margin: auto;
+}
+.navBar {
+	background-color: #a0ddeb;
+	display: flex;
+	height: 80px;
+	align-items: center;
+	flex-flow: row;
+	padding: 10px;
+}
+.leftNav {
+	flex: 2;
+	margin-left: 100px;
+	display: flex;
+	align-items: center;
+	/* background-color: mediumpurple; */
+}
+.middleNav {
+	/* background: green; */
+	flex: 6;
+}
+.rightNav {
+	flex: 2;
+	/* background-color: maroon; */
+}
+.logo,
+.brandName {
+	display: inline;
+}
+.middleList {
+	display: flex;
+	justify-content: flex-end;
+}
+.middleList li {
+	margin: 0px 30px;
+}
+.logoImg {
+	height: 50px;
+	width: auto;
+}
+.brandName {
+	font-family: 'Odibee Sans', cursive;
+	font-weight: 500;
+	margin-left: 20px;
+}
+.logoLink {
+	text-decoration: none;
+}
+#link a {
+	color: black;
+	text-decoration: none;
+	display: inline;
+}
+
+#link button {
+	padding: 10px 20px;
+	display: inline-block;
+	cursor: pointer;
+	font-weight: 600;
+	color: whitesmoke;
+	border-radius: 5px;
+}
+.loginBtn {
+	background-color: #1da9fb;
+	border: none;
+}
+.signupBtn {
+	background-color: #199e47;
+	border: none;
+}
+.rightList > li {
+	margin-right: 1px;
+}
+.rightList {
+	display: flex;
+	justify-content: center;
+}
+li {
+	list-style: none;
+}
