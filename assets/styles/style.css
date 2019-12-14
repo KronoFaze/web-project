@@ -52,6 +52,7 @@ body {
 }
 .logoLink {
 	text-decoration: none;
+	color: black;
 }
 .middleNav .link {
 	color: black;
