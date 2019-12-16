@@ -16,7 +16,7 @@ body {
 }
 .full {
   height: 95vh;
-  background: url('./img/background.jpg');
+  background: url('../img/background.jpg');
 }
 .full::before {
   content: "";
