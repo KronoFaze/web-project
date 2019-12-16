@@ -1,45 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="stylesheet" href="./assets/styles/style.css" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap"
-			rel="stylesheet"
-		/>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link href="style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> 
 		<title>Alpha Storage</title>
 	</head>
 	<body>
-		<header>
+		<section class="full">
+			<header>
 			<div class="navBar ">
+				<div class="container navContainer">
 				<div class="leftNav">
 					<div class="logo">
-						<a
-							href="./index.html"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img
-								class="logoImg"
-								src="./assets/img/logo.png"
-								alt="logo"
-							/>
+						<a href="./index.html" target="_blank" rel="noopener noreferrer">
+							<img class="logoImg" src="logo.png" alt="logo">
 						</a>
 					</div>
 					<div class="brandName">
-						<a
-							href="./index.html"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="logoLink"
-							>Alpha Storage</a
-						>
+						<a class="logoLink" href="./index.html" target="_blank" rel="noopener noreferrer">Alpha Storage</a>
 					</div>
 				</div>
 				<div class="middleNav">
@@ -49,11 +32,67 @@
 				</div>
 				<div class="rightNav">
 					<div class="button">
-						<button type="button" class="loginBtn">Log In</button>
-						<button type="button" class="signupBtn">Sign Up</button>
+						<button class="loginBtn" type="button">Log In</button>
+						<button class="signupBtn" type="button">Sign Up</button>
 					</div>
 				</div>
+			
+				</div>
 			</div>
-		</header>
+        </header>
+        <section class="main">
+            <div class="container mainContainer">
+                <div class="mainLeft">
+                    <h1 class="motoHead">MOTO</h1>
+                    <p class="motoDescription">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, eligendi mollitia optio aperiam debitis rerum, impedit minus molestias quia, facere fugiat dolore dolorem voluptatem repellendus eveniet ullam veniam atque culpa?
+                    </p>
+                 </div>
+                 <div class="mainRight">
+					 <div class="auBtn">
+						 <button class="auBtnLogin" type="submit">Log In</button>
+						 <button class="auBtnSignup" type="submit">Sign Up</button>
+					 </div>
+                     <div class=" authentication signup" id="signup">
+                         <form>
+                             <p class="UserName">Enter User Name</p>
+							 <input class="userNameInput" type="text" placeholder="UserName">
+							 <p class="email">Enter Email Adress</p>
+							 <input class="emailInput" type="email" placeholder="Email Address">
+							 <p class="password">Password</p>
+							 <input class="singupPasswordInput" type="password" placeholder="Password">
+							 <p class="confirmPassword">Confirm Password</p>
+							 <input class="confirmPasswordInput" type="password" placeholder="Confirm Password">
+							 <button class="confirmBtn">Sign Up</button>
+							 
+                         </form>
+					 </div>
+					 <div class=" authentication login" id="login">
+                         <form>
+                             <p class="userName">User Name or Email</p>
+							 <input class="userNameEmailInput" type="text" placeholder="UserName">
+							 
+							 <p class="password">Password</p>
+							 <input class="LoginPasswordInput" type="password" placeholder="Password">
+							 
+							 <button class="confirmLoginBtn">Log In</button>
+							 
+                         </form>
+					 </div>
+					 
+                 </div>
+            </div>
+            
+        </section>
+		</section>
+		
+
+
+
+
+
+
+
+		<script src="app.js"></script>
 	</body>
 </html>
