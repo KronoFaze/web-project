@@ -1,86 +1,218 @@
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-	font-size: 20px;
-	font-family: 'Roboto', sans-serif;
-	background-image: url('/assets/img/background.jpg');
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+
+  line-height: 1.6;
+  /* height: 100vh; */
+  color: white;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+.full {
+  height: 95vh;
+  background: url(/assets/img/background.jpg);
+}
+.full::before {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 95vh;
 }
 .container {
-	width: 80%;
-	margin: auto;
+  width: 80%;
+  margin: auto;
 }
 .navBar {
-	background-color: transparent;
-	display: flex;
-	height: 80px;
-	align-items: center;
-	flex-flow: row;
-	padding: 10px;
+  background-color: transparent;
+}
+.navContainer {
+  padding: 10px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  flex-flow: row;
 }
 .leftNav {
-	flex: 2;
-	margin-left: 100px;
-	display: flex;
-	align-items: center;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  z-index: 10;
 }
 .middleNav {
-	flex: 6;
-	display: flex;
-	justify-content: flex-end;
+  flex: 6;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
 }
 .rightNav {
-	flex: 2;
+  flex: 2;
+  z-index: 10;
 }
 
 .logo,
 .brandName {
-	display: inline;
+  display: inline;
 }
 
 .logoImg {
-	height: 50px;
-	width: auto;
+  height: 50px;
+  width: auto;
 }
 .brandName {
-	font-family: 'Odibee Sans', cursive;
-	font-weight: 500;
-	margin-left: 20px;
-	font-size: 25px;
+  font-family: "Odibee Sans", cursive;
+  font-weight: 500;
+  margin-left: 20px;
+  font-size: 25px;
 }
 .logoLink {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: white;
 }
 .middleNav .link {
-	color: black;
-	text-decoration: none;
-	display: inline;
-	margin: 0px 30px;
+  color: white;
+  text-decoration: none;
+  display: inline;
+  margin: 0px 30px;
 }
 
 .button {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .button button {
-	padding: 10px 20px;
-	display: inline-block;
-	cursor: pointer;
-	font-weight: 600;
-	color: whitesmoke;
-	border-radius: 5px;
-	outline: none;
-	margin-right: 1px;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+
+  border: none;
 }
 .loginBtn {
-	background-color: #1da9fb;
-	border: none;
+  background-color: #1da9fb;
+
+  margin-right: 10px;
 }
 .signupBtn {
-	background-color: #199e47;
-	border: none;
+  background-color: #28a745;
+}
+
+.main {
+  min-height: 800px;
+}
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  min-height: 800px;
+}
+.mainLeft,
+.mainRight {
+  flex: 1;
+  z-index: 10;
+}
+.mainLeft {
+  padding-left: 15px;
+  padding-top: 50px;
+  padding-right: 50px;
+  margin-top: 100px;
+  /* margin-bottom: 250px; */
+  font-family: "Pacifico", cursive;
+}
+.motoHead {
+  font-size: 50px;
+  padding-bottom: 20px;
+  color: white;
+}
+.motoDescription {
+  font-size: 25px;
+  color: white;
+}
+.mainRight {
+  padding: 0px 100px;
+  margin-top: 100px;
+  position: relative;
+
+  justify-content: center;
+}
+.auBtn {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  /* top: 0; */
+}
+.auBtnLogin,
+.auBtnSignup {
+  font-size: 20px;
+  color: white;
+  background: none;
+  border: none;
+}
+.auBtnLogin,
+.auBtnSignup {
+  padding: 10px 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+/* .auBtnSignup {
+  border-bottom: 2px solid #1da9fb;
+} */
+.activeBtn {
+  border-bottom: 2px solid #1da9fb;
+}
+.mainRight p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  /* position: relative; */
+}
+.authentication {
+  margin: 0px 100px;
+  position: relative;
+  top: 0;
+}
+.login {
+  display: none;
+}
+.signup {
+  display: block;
+}
+.authentication input {
+  padding: 14px;
+  padding-right: 30px;
+  width: 100%;
+  border-radius: 5px;
+  /* outline: none; */
+  border: none;
+  margin-bottom: 15px;
+}
+.confirmBtn,
+.confirmLoginBtn {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: #28a745;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.confirmLoginBtn {
+  background-color: #1da9fb;
 }
