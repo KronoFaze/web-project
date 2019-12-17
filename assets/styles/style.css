@@ -13,6 +13,7 @@ body {
 	overflow-y: scroll;
 }
 .full {
+  height: 95vh;
 	height: 100vh;
 	background: url('/assets/img/background.jpg');
 	background-position: center center;
@@ -166,9 +167,10 @@ body {
 }
 .auBtnLogin,
 .auBtnSignup {
-	padding: 10px 25px;
-	margin-bottom: 15px;
-	cursor: pointer;
+  padding: 10px 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  position: relative;
 }
 /* .auBtnSignup {
 	border-bottom: 2px solid #1da9fb;
@@ -188,11 +190,12 @@ body {
 	top: 0;
 }
 .login {
-	display: none;
+  display: block;
 }
 .signup {
-	display: block;
+  display: none;
 }
+
 .authentication input {
 	padding: 14px;
 	padding-right: 30px;
@@ -217,4 +220,38 @@ body {
 }
 .confirmLoginBtn {
 	background-color: #1da9fb;
+}
+.activeSignup {
+  animation-name: signup;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes signup {
+  from {
+    right: -80px;
+    opacity: 0;
+  }
+
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+.activeLogin {
+  animation-name: login;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes login {
+  from {
+    left: -80px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
 }
